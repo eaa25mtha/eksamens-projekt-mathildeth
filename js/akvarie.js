@@ -4,42 +4,19 @@
 DATA OBJEKT, ARRAY TIL FISKENE
 --------------------------------------*/
 const fiskInfo = [
-  {
-    className: "klovnfisk",
-    farve: "orange",
-    alder: 5,
-  },
+  {className: "klovnfisk", farve: "orange", alder: 5 },
 
-  {
-    className: "mini-klovnfisk",
-    farve: "orange",
-    alder: 1,
-  },
+  {className: "mini-klovnfisk", farve: "orange", alder: 1 },
 
-  {
-    className: "laks",
-    farve: "lyserød",
-    alder: 2,
-  },
+  {className: "laks", farve: "lyserød", alder: 2 },
 
-  {
-    className: "blue-fisk",
-    farve: "blå",
-    alder: 1,
-  },
+  {className: "blue-fisk", farve: "blå", alder: 1 },
 
-  {
-    className: "lilla-fisk",
-    farve: "lilla",
-    alder: 7,
-  },
+  {className: "lilla-fisk", farve: "lilla", alder: 7 },
 
-  {
-    className: "stribet-fisk",
-    farve: "blå og lyserød",
-    alder: "10",
-  },
+  {className: "stribet-fisk", farve: "blå og lyserød", alder: "10"},
 ];
+
 
 /*---------------------------------------
 DOM CONTENT LOAD OG VIDENSBOKS VARIABEL
@@ -47,7 +24,9 @@ DOM CONTENT LOAD OG VIDENSBOKS VARIABEL
 document.addEventListener("DOMContentLoaded", () => {
   const vidensboks = document.getElementById("vidensboks");
 
-  /*-----------------------------
+
+
+/*-----------------------------
 VIDENSBOKS FUNKTION
 -------------------------------*/
   function showVidensboks(html) {
@@ -62,7 +41,8 @@ VIDENSBOKS FUNKTION
     }
   }
 
-  /*------------------
+  
+/*------------------
 FOR EACH FUNKTION
 --------------------*/
   fiskInfo.forEach((fisk) => {
@@ -80,7 +60,8 @@ FOR EACH FUNKTION
     });
   });
 
-  /*---------------------------------
+
+/*---------------------------------
 HENT FISKENE FRA HTML MED DOM
 -----------------------------------*/
   //henter alle elementerne der skal bruges fra html ved at kalde en const variabel
@@ -88,7 +69,8 @@ HENT FISKENE FRA HTML MED DOM
   const laks = document.querySelector(".laks");
   const stribetFisk = document.querySelector(".stribet-fisk");
 
-  /*-------------------------
+
+/*-------------------------
 AUDIO OBJEKTER TIL FISKENE
 ---------------------------*/
   const soundKlovnfisk = new Audio();
@@ -100,7 +82,8 @@ AUDIO OBJEKTER TIL FISKENE
   const soundStribetFisk = new Audio();
   soundStribetFisk.src = "sound/cykel.mp3";
 
-  /*--------------------------------
+
+/*--------------------------------
 EVENTLISTENERS PÅ AUDIO OBJEKTERNE
 ----------------------------------*/
   //klovnfisken
@@ -121,4 +104,18 @@ EVENTLISTENERS PÅ AUDIO OBJEKTERNE
       soundStribetFisk.play();
     });
   }
+
+
+  /*--------------------
+  TILBAGE KNAP EVENT
+  ---------------------*/   
+  const tilbageBtn = document.querySelector(".tilbagebtn");
+
+  if(tilbageBtn) {
+    tilbageBtn.addEventListener("click", () => {
+        window.location.href = "index-forside.html"
+    });
+  }
+
+
 }); //DOM content loaded, slut
