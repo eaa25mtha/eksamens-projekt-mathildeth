@@ -60,10 +60,10 @@ FOR EACH FUNKTION
   });
 
 
-/*---------------------------------
-HENT FISKENE FRA HTML MED DOM
------------------------------------*/
-  //henter alle elementerne der skal bruges fra html ved at kalde en const variabel
+ /*---------------------------------
+ HENT FISKENE FRA HTML MED DOM
+ -----------------------------------*/
+  //henter alle fiskene der skal bruges fra html ved at kalde en const variabel
   const klovnfisk = document.querySelector(".klovnfisk");
   const laks = document.querySelector(".laks");
   const stribetFisk = document.querySelector(".stribet-fisk");
@@ -72,9 +72,9 @@ HENT FISKENE FRA HTML MED DOM
   const miniKlovnfisk = document.querySelector(".mini-klovnfisk");
 
 
-/*-------------------------
-AUDIO OBJEKTER TIL FISKENE
----------------------------*/
+ /*-------------------------
+ AUDIO OBJEKTER TIL FISKENE
+ ---------------------------*/
   const soundKlovnfisk = new Audio();
   soundKlovnfisk.src = "audio/klovnfisk.mp3";
 
@@ -88,9 +88,9 @@ AUDIO OBJEKTER TIL FISKENE
   soundBlueFisk.src = "audio/bobler.mp3";
 
 
-/*--------------------------------
-EVENTLISTENERS PÅ AUDIO OBJEKTERNE
-----------------------------------*/
+ /*--------------------------------
+ EVENTLISTENERS PÅ AUDIO OBJEKTERNE
+ ----------------------------------*/
   //klovnfisken
   if (klovnfisk) {
     klovnfisk.addEventListener("click", () => {
@@ -117,9 +117,9 @@ EVENTLISTENERS PÅ AUDIO OBJEKTERNE
   }
 
 
-  /*--------------------
-  TILBAGE KNAP EVENT
-  ---------------------*/   
+ /*--------------------
+ TILBAGE KNAP EVENT
+ ---------------------*/   
   const tilbageBtn = document.querySelector(".tilbagebtn");
 
   if(tilbageBtn) {
@@ -127,6 +127,20 @@ EVENTLISTENERS PÅ AUDIO OBJEKTERNE
         window.location.href = "index.html"
     });
   }
+
+ /*-------------------
+ CYKEL DRAG AND DROP
+ ---------------------*/
+ const cykel = document.querySelector(".cykel");
+
+
+
+
+
+
+
+
+
 
 
 }); //DOM content loaded, slut

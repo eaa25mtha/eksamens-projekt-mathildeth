@@ -30,10 +30,10 @@ AKVARIE INDHOLD
 }
 
 .baggrund .akvarie {
-    width: 1100px;
+    width: 1024px;
     max-width: 100%;
     height: auto;
-    left: 8vh;
+    left: 2vw;
     height: relative;
     position: relative;
 }
@@ -51,6 +51,19 @@ AKVARIE INDHOLD
     width: 300px;
     left: 25vh;
     z-index: 50;
+}
+
+.cykel {
+    position: absolute;
+    bottom: 5vh;
+    left: 52vw;
+}
+
+.skraldespand {
+    position: absolute;
+    bottom: 2vh;
+    width: 200px;
+    right: 2vw;
 }
 
 
@@ -78,13 +91,13 @@ ANIMATION AF FISK
 .mini-klovnfisk {
     position: absolute;
     bottom: 60vh;
-    right: 20vh;
+    right: 22vh;
     width: 90px;
     animation: klovnfisk 10s linear infinite;
     cursor: pointer;
 }
 
-@keyframes klovnfisk {
+@keyframes mini-klovnfisk {
     0% {transform: translateX(0);}
     48% {transform: translateX(-750px) rotateY(0);}
     50% {transform: translateX(-650px) rotateY(180deg);}
@@ -132,7 +145,7 @@ ANIMATION AF FISK
 .lilla-fisk {
     position: absolute;
     bottom: 18vh;
-    right: 30vh;
+    right: 32vh;
     width: 100px;
     animation: lilla-fisk 8s linear infinite;
     cursor: pointer;
@@ -140,7 +153,7 @@ ANIMATION AF FISK
 
 @keyframes lilla-fisk {
     0% {transform: translateX(0) rotateY(180deg);}
-    49% { transform: translateX(-750px) rotateY(180deg);}
+    49% { transform: translateX(-650px) rotateY(180deg);}
     50% {transform: translateX(-650px) rotateY(0);}
     98% {transform: translateX(0) rotateY(0);}
     100% {transform: translateX(0) translateY(0);}
@@ -211,3 +224,8 @@ TILBAGE KNAP
     width: 80px;
     height: auto;
 }
+
+
+/*------------------------------------
+MEDIA BREAKPOINTS RESPONSIVE DESIGN
+-------------------------------------*/
