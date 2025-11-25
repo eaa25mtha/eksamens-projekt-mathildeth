@@ -30,19 +30,12 @@ AKVARIE INDHOLD
 }
 
 .baggrund .akvarie {
-    width: 1300px;
+    width: 1100px;
     max-width: 100%;
     height: auto;
     left: 8vh;
     height: relative;
     position: relative;
-}
-
-.akvarie-indhold {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
 }
 
 .krabbe {
@@ -67,38 +60,18 @@ ANIMATION AF FISK
 /* klovnfisken */
 .klovnfisk {
     position: absolute;
-    bottom: 35vh;
+    bottom: 40vh;
     right: 20vh;
     animation: klovnfisk 16s linear infinite;
     cursor: pointer;
 }
 
 @keyframes klovnfisk {
-    0% {
-        transform: translateX(0);
-    }
-
-    /* fiskens startpunkt*/
-    48% {
-        transform: translateX(-650px) rotateY(0);
-    }
-
-    /* fisken svømmer til venstre*/
-    50% {
-        transform: translateX(-650px) rotateY(180deg);
-    }
-
-    /* fisken laver en hurtig vendning*/
-    98% {
-        transform: translateX(0) rotateY(180deg);
-    }
-
-    /* fisken svømmer mod højre*/
-    100% {
-        transform: translateX(0) translateY(0);
-    }
-
-    /* den laver en hurtig vending og starter loopen forfra*/
+    0% {transform: translateX(0);}                           /* fiskens startpunkt*/
+    48% {transform: translateX(-650px) rotateY(0);}          /* fisken svømmer til venstre*/
+    50% {transform: translateX(-650px) rotateY(180deg);}     /* fisken laver en hurtig vendning*/
+    98% {transform: translateX(0) rotateY(180deg);}          /* fisken svømmer mod højre*/
+    100% {transform: translateX(0) translateY(0);}           /* den laver en hurtig vending og starter loopen forfra*/
 }
 
 /* klovnfisk 2*/
@@ -112,57 +85,29 @@ ANIMATION AF FISK
 }
 
 @keyframes klovnfisk {
-    0% {
-        transform: translateX(0);
-    }
-
-    48% {
-        transform: translateX(-750px) rotateY(0);
-    }
-
-    50% {
-        transform: translateX(-650px) rotateY(180deg);
-    }
-
-    98% {
-        transform: translateX(0) rotateY(180deg);
-    }
-
-    100% {
-        transform: translateX(0) translateY(0);
-    }
+    0% {transform: translateX(0);}
+    48% {transform: translateX(-750px) rotateY(0);}
+    50% {transform: translateX(-650px) rotateY(180deg);}
+    98% {transform: translateX(0) rotateY(180deg);}
+    100% {transform: translateX(0) translateY(0);}
 }
 
 /* laks */
 .laks {
     position: absolute;
     bottom: 70vh;
-    left: 45vh;
+    left: 50vh;
     width: 150px;
     animation: laks 15s linear infinite;
     cursor: pointer;
 }
 
 @keyframes laks {
-    0% {
-        transform: translateX(0);
-    }
-
-    48% {
-        transform: translateX(600px) rotateY(0);
-    }
-
-    50% {
-        transform: translateX(555px) rotateY(180deg);
-    }
-
-    98% {
-        transform: translateX(0) rotateY(180deg);
-    }
-
-    100% {
-        transform: translateX(0) translateY(0);
-    }
+    0% {transform: translateX(0);}
+    48% {transform: translateX(600px) rotateY(0);}
+    50% {transform: translateX(555px) rotateY(180deg);}
+    98% {transform: translateX(0) rotateY(180deg);}
+    100% {transform: translateX(0) translateY(0);}
 }
 
 /* den blå fisk */
@@ -171,30 +116,16 @@ ANIMATION AF FISK
     bottom: 25vh;
     left: 50vh;
     width: 150px;
-    animation: blue-fisk 12s linear infinite;
+    animation: blue-fisk 10s linear infinite;
     cursor: pointer;
 }
 
 @keyframes blue-fisk {
-    0% {
-        transform: translateX(0);
-    }
-
-    48% {
-        transform: translateX(700px) rotateY(0);
-    }
-
-    50% {
-        transform: translateX(620px) rotateY(180deg);
-    }
-
-    98% {
-        transform: translateX(0) rotateY(180deg);
-    }
-
-    100% {
-        transform: translateX(0) rotateY(0);
-    }
+    0% {transform: translateX(0);}
+    48% {transform: translateX(700px) rotateY(0);}
+    50% {transform: translateX(620px) rotateY(180deg);}
+    98% {transform: translateX(0) rotateY(180deg);}
+    100% {transform: translateX(0) rotateY(0);}
 }
 
 /* den lilla fisk */
@@ -208,25 +139,11 @@ ANIMATION AF FISK
 }
 
 @keyframes lilla-fisk {
-    0% {
-        transform: translateX(0) rotateY(180deg);
-    }
-
-    49% {
-        transform: translateX(-750px) rotateY(180deg);
-    }
-
-    50% {
-        transform: translateX(-650px) rotateY(0);
-    }
-
-    98% {
-        transform: translateX(0) rotateY(0);
-    }
-
-    100% {
-        transform: translateX(0) translateY(0);
-    }
+    0% {transform: translateX(0) rotateY(180deg);}
+    49% { transform: translateX(-750px) rotateY(180deg);}
+    50% {transform: translateX(-650px) rotateY(0);}
+    98% {transform: translateX(0) rotateY(0);}
+    100% {transform: translateX(0) translateY(0);}
 }
 
 /* den stribede fisk */
@@ -239,25 +156,11 @@ ANIMATION AF FISK
 }
 
 @keyframes stribet-fisk {
-    0% {
-        transform: translateX(0);
-    }
-
-    48% {
-        transform: translateX(800px) rotateY(0);
-    }
-
-    50% {
-        transform: translateX(620px) rotateY(180deg);
-    }
-
-    98% {
-        transform: translateX(0) rotateY(180deg);
-    }
-
-    100% {
-        transform: translateX(0) rotateY(0);
-    }
+    0% {transform: translateX(0);}
+    48% {transform: translateX(800px) rotateY(0);}
+    50% {transform: translateX(620px) rotateY(180deg);}
+    98% {transform: translateX(0) rotateY(180deg);}
+    100% {transform: translateX(0) rotateY(0);}
 }
 
 
