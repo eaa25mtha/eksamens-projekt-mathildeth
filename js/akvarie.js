@@ -61,7 +61,7 @@ FOR EACH FUNKTION
   });
   */
 
-  
+
 
  /*---------------------------------
  HENT FISKENE FRA HTML MED DOM
@@ -159,13 +159,13 @@ FOR EACH FUNKTION
  /*-------------------
  CYKEL DRAG AND DROP
  ---------------------*/
- const cykel = document.querySelector(".cykel");
+ /*const cykel = document.querySelector(".cykel");
  
  cykel.addEventListener("dragstart", () => {
     draggedCykel = cykel;
   });
   
- cykel.draggable = true;
+ cykel.draggable = true;*/
 
 
 
