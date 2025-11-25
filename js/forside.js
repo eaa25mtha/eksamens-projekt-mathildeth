@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const vidensButton = document.querySelector(".videns-akvarie-btn");
 
   vidensButton.addEventListener("click", () => {
-    window.location.href = "index-akvarie.html";
+    window.location.href = "akvarie.html";
   });
 
 });

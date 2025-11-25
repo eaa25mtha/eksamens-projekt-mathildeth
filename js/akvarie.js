@@ -124,7 +124,7 @@ EVENTLISTENERS PÅ AUDIO OBJEKTERNE
 
   if(tilbageBtn) {
     tilbageBtn.addEventListener("click", () => {
-        window.location.href = "index-forside.html"
+        window.location.href = "index.html"
     });
   }
 
