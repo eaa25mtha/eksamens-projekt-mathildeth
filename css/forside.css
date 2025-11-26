@@ -118,15 +118,15 @@ ELEMEMENT PLACERING PÅ FORSIDEN
     top: 45%;
     left: 30%;
     z-index: 2;
-    width: 120px;
+    width: 8vw;
 }
 
 .gul-tang-stor {
     position: absolute;
     top: 47%;
-    right: 7%;
-    z-index: 3;
-    width: 10vw;
+    right: 6%;
+    z-index: 5;
+    width: 12vw;
 }
 
 .sten-lille {
@@ -308,6 +308,52 @@ ANIMATIONER
 }
 
 
-/*----------------------------------
-MEDIA BREAKPOINTS RESPONSIVE DESIGN
-------------------------------------*/
+/*----------------------------------------------------------------
+MEDIA BREAKPOINTS RESPONSIVE DESIGN TIL IPAD AIR 13 INCH 1366x1024
+------------------------------------------------------------------*/
+@media (max-width: 1366px) {
+
+.videns-akvarie-btn {
+    left: 34vw;
+}
+
+.overskrift {
+    top: 25%;
+}
+
+.green-tang {
+    position: absolute;
+    top: 32%;
+}
+
+.green-tang-lille {
+    position: absolute;
+    top: 52%;
+}
+
+.green-tang-stor {
+    position: absolute;
+    top: 30%;
+}
+
+.green-tang-stor-2 {
+    position: absolute;
+    top: 42%;
+}
+
+.gul-tang {
+    position: absolute;
+    top: 50%;
+}
+
+.gul-tang-stor {
+    position: absolute;
+    top: 55%;
+}
+
+.akvariemanden {
+    position: absolute;
+    left: 66%;
+    top: 50%;
+}
+}
