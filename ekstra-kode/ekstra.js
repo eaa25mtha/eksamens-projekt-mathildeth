@@ -53,3 +53,67 @@ FOR EACH FUNKTION
       });
     });
   });
+
+
+
+  
+/*-------------------
+DRAG AND DROP CYKEL 
+---------------------*/
+let draggedCykel = null; 
+ const cykel = document.querySelector(".cykel");
+ const skraldespand = document.querySelector(".skraldespand");
+
+ //event handlers til skraldespanden
+  skraldespand.addEventListener("dragenter", onSkraldespandDragOver);
+  skraldespand.addEventListener("dragover", onSkraldespandDragOver);
+  skraldespand.addEventListener("dragleave", onSkraldespandDragLeave);
+  skraldespand.addEventListener("dragend", onSkraldespandDragLeave);
+ 
+
+ //det er sandt at cyklen kan dragges
+ cykel.setAttribute("draggable", "true");
+
+
+ //hvis elementet eksisterer, skal det animners og fjernes
+ if(draggedCykel) removeCykelWithFade(draggedCykel);
+
+ 
+ //når drag startes
+ cykel.addEventListener("dragstart", event => {
+    draggedCykel = cykel;
+    cykel.classList.add("dragging");
+ });
+
+
+ //når drag sluttes 
+ cykel.addEventListener("dragend", () => {
+  cykel.classList.remove("dragging");
+  draggedCykel = null;
+ });
+
+
+ //tillad drop på skraldespanden og tilføj visuel feedback
+ function onSkraldespandDragOver(event) {
+    event.preventDefault();                
+    skraldespand.classList.add("over");
+ }
+
+
+ function onSkraldespandDragLeave() {
+  skraldespand.classList.remove("over");
+ }
+
+
+ //når man dropper fjernes cyklen
+ skraldespand.addEventListener("drop", event => {
+  event.preventDefault();
+  skraldespand.classList.remove("over");
+
+
+ //ryd op i referencen som det sidste
+ draggedCykel = null; 
+ });
+
+
+

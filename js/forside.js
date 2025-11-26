@@ -9,4 +9,4 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.href = "akvarie.html";
   });
 
-});
+}); //dom content load slut 

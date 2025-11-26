@@ -176,7 +176,7 @@ ANIMATIONER
 .pink-fisk {
     position: absolute;
     bottom: 55%;
-    left: 20%;
+    left: 22%;
     width: 10vw;
     animation: pink-fisk 10s linear infinite;
     cursor: pointer;
@@ -211,6 +211,25 @@ TILBAGE KNAP
     width: 15vw;
     height: auto;
 }
+
+
+/*----------------------
+DRAG AND DROP EFFEKTER
+------------------------*/
+/*.skraldespand.over {
+    transform: translateY(-6px) scale(1.05);
+    transition: transform 120ms ease, filter 120ms ease;
+    filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.18));    
+}
+
+.fade-out {
+    transition: opacity 200ms ease, transform 200ms ease;
+    opacity: 0.01;
+    transform: scale(0.85) translateY(6px);
+    pointer-events: none;
+}
+ */
+
 
 
 /*------------------------------------

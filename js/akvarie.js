@@ -95,12 +95,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
- /*-------------------
- CYKEL DRAG AND DROP
- ---------------------*/
+ /*-----------------------------------------------------
+ CYKEL DRAG AND DROP + DRAGOVER EVENT PÅ SKRALDESPANDEN
+ -------------------------------------------------------*/
  
-
-
 
 
 
