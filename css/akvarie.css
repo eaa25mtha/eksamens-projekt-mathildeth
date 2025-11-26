@@ -38,7 +38,6 @@ ELEMENT PLACERING PÅ SIDEN
     width: 70vw;
     max-width: 100%;
     height: auto;
-    height: relative;
     position: absolute;
     top: 3%;
     left: 18%;
@@ -217,3 +216,21 @@ TILBAGE KNAP
 /*------------------------------------
 MEDIA BREAKPOINTS RESPONSIVE DESIGN
 -------------------------------------*/
+@media (max-width: 1366px) {
+    .akvarie {
+        position: absolute;
+        width: 80vw;
+        top: 15%;
+        left: 14%;
+    }
+
+    .cykel {
+        position: absolute;
+        bottom: 8%;
+    }
+
+    .laks {
+        position: absolute;
+        bottom: 65%;
+    }
+}
