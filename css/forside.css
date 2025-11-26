@@ -337,12 +337,12 @@ MEDIA BREAKPOINTS RESPONSIVE DESIGN TIL IPAD AIR 13 INCH 1366x1024
 }
 
 .overskrift {
-    top: 25%;
+    top: 20%;
 }
 
 .green-tang {
     position: absolute;
-    top: 34%;
+    top: 32%;
 }
 
 .green-tang-lille {
@@ -352,7 +352,7 @@ MEDIA BREAKPOINTS RESPONSIVE DESIGN TIL IPAD AIR 13 INCH 1366x1024
 
 .green-tang-stor {
     position: absolute;
-    top: 30%;
+    top: 28%;
 }
 
 .green-tang-stor-2 {

@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
   soundLaks.src = "audio/bobler.mp3";
 
   const soundPinkFisk = new Audio();
-  soundPinkFisk.src = "audio/cykel.mp3";
+  soundPinkFisk.src = "audio/bobler.mp3";
 
   const soundBlueFisk = new Audio();
   soundBlueFisk.src = "audio/bobler.mp3";
