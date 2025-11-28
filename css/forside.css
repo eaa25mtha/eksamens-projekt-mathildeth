@@ -57,7 +57,7 @@ SPIL KNAPPEN
 
 .videns-akvarie-btn {
     left: 38.5vw;
-    background-image: url("../img/akvarie-btn.png");
+    background-image: url("../img/skattekiste.svg");
 }
 
 
@@ -190,7 +190,7 @@ ELEMEMENTER PÅ FORSIDEN
     width: 16vw;
 }
 
-.musling {
+.pink-musling {
     position: absolute;
     top: 76%;
     left: 16%;
@@ -273,7 +273,7 @@ ANIMATIONER
     100% {transform: translate(0, 0) scaleX(1);}
 }
 
-.blue-fisk {
+.green-fisk {
     position: absolute;
     top: 60%;
     left: 25%;

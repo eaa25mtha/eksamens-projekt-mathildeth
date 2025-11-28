@@ -48,6 +48,7 @@ ANIMATIONER
     position: absolute;
     bottom: 40%;
     right: 18%;
+    width: 12vw;
     animation: klovnfisk 16s linear infinite;
     cursor: pointer;
     z-index: 6;
@@ -99,7 +100,7 @@ ANIMATIONER
 }
 
 
-.blue-fisk {
+.green-fisk {
     position: absolute;
     bottom: 25%;
     left: 25%;
