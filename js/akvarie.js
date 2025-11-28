@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
  /*---------------------------------
- HENT FISKENE FRA HTML MED DOM
+ VARIABLER 
  -----------------------------------*/
   const klovnfisk = document.querySelector(".klovnfisk");
   const laks = document.querySelector(".laks");
@@ -93,14 +93,6 @@ document.addEventListener("DOMContentLoaded", () => {
         window.location.href = "index.html"
     });
   }
-
-
- /*-----------------------------------------------------
- CYKEL DRAG AND DROP + DRAGOVER EVENT PÅ SKRALDESPANDEN
- -------------------------------------------------------*/
- 
-
-
 
 
 }); //DOM content loaded, slut

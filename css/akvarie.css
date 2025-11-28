@@ -21,19 +21,15 @@ ROOT, RESET OG IMPORT AF FONT
 
 
 
-/*--------
-BAGGRUND
-----------*/
+/*-------------------
+BAGGRUND OG AKVARIE
+--------------------*/
 .baggrund {
     background: linear-gradient(var(--color-bg-top), var(--color-bg-mid), var(--color-bg-bot));
     z-index: 0;
     min-height: 100vh;
 }
 
-
-/*-------------------------
-ELEMENT PLACERING PÅ SIDEN
----------------------------*/
 .akvarie {
     width: 70vw;
     max-width: 100%;
@@ -42,38 +38,6 @@ ELEMENT PLACERING PÅ SIDEN
     top: 3%;
     left: 18%;
     z-index: 1;
-}
-
-.krabbe {
-    position: fixed;
-    top: 30vh;
-    left: -6vw;
-    width: 20vw;
-    z-index: 2;
-    rotate: 75deg;
-}
-
-.talebobel {
-    position: fixed;
-    top: 2vh;
-    width: 22vw;
-    left: 2vw;
-    z-index: 3;
-}
-
-.cykel {
-    position: absolute;
-    bottom: 4%;
-    left: 38%;
-    z-index: 4
-}
-
-.skraldespand {
-    position: absolute;
-    bottom: 2vh;
-    width: 14vw;
-    right: 2vw;
-    z-index: 4;
 }
 
 
@@ -213,25 +177,6 @@ TILBAGE KNAP
 }
 
 
-/*----------------------
-DRAG AND DROP EFFEKTER
-------------------------*/
-/*.skraldespand.over {
-    transform: translateY(-6px) scale(1.05);
-    transition: transform 120ms ease, filter 120ms ease;
-    filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.18));    
-}
-
-.fade-out {
-    transition: opacity 200ms ease, transform 200ms ease;
-    opacity: 0.01;
-    transform: scale(0.85) translateY(6px);
-    pointer-events: none;
-}
- */
-
-
-
 /*------------------------------------
 MEDIA BREAKPOINTS RESPONSIVE DESIGN
 -------------------------------------*/
@@ -241,11 +186,6 @@ MEDIA BREAKPOINTS RESPONSIVE DESIGN
         width: 80vw;
         top: 15%;
         left: 14%;
-    }
-
-    .cykel {
-        position: absolute;
-        bottom: 8%;
     }
 
     .laks {
