@@ -1,7 +1,8 @@
 
-/*-----------------------------
-ROOT, RESET OG IMPORT AF FONT
-------------------------------*/
+/* import af font */
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
 /* farve variabler i root*/
 :root {
     --color-bg-top: #9adfe9;
@@ -15,10 +16,6 @@ ROOT, RESET OG IMPORT AF FONT
     padding: 0;
     box-sizing: border-box;
 }
-
-/* import af font */
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 
 
 /*---------
@@ -83,39 +80,40 @@ ELEMEMENTER
     z-index: 50;
 }
 
-.green-tang {
+.green-tang-1 {
     position: absolute;
-    top: 20%;
+    bottom: 20%;
     left: 3%;
     z-index: 4;
     width: 12vw;
 }
 
-.green-tang-lille {
+.green-tang-2 {
     position: absolute;
-    top: 45%;
+    bottom: 22%;
     left: 14%;
     z-index: 4;
-    width: 7vw;
+    width: 8vw;
 
 }
 
-.green-tang-stor {
+.green-tang-3 {
     position: absolute;
-    top: 16%;
+    bottom: 28%;
     right: 14%;
     z-index: 4;
     width: 11vw;
+    transform: scaleX(-1);
 
 }
 
-.green-tang-stor-2 {
+.green-tang-4 {
     position: absolute;
-    top: 31%;
+    bottom: 20%;
     right: 1%;
-    z-index: 4;
-    width: 10vw;
-
+    z-index: 5;
+    width: 12vw;
+    transform: scaleX(-1);
 }
 
 .lilla-tang {
@@ -143,7 +141,7 @@ ELEMEMENTER
     width: 12vw;
 }
 
-.sten-lille {
+.sten-1 {
     position: absolute;
     bottom: 18%;
     left: 28%;
@@ -151,23 +149,23 @@ ELEMEMENTER
     width: 10vw;
 }
 
-.sten-lille-2 {
+.sten-2 {
     position: absolute;
-    top: 68%;
-    right: 23%;
+    bottom: 5%;
+    left: 20%;
     z-index: 5;
-    width: 6vw;
+    width: 10vw;
 }
 
-.sten-stor {
+.sten-3 {
     position: absolute;
     top: 70%;
-    left: 6%;
+    left: 4%;
     z-index: 5;
     width: 16vw;
 }
 
-.sten-stor-2 {
+.sten-4 {
     position: absolute;
     top: 68%;
     right: 14%;
@@ -175,7 +173,7 @@ ELEMEMENTER
     width: 12vw;
 }
 
-.sten-stor-3 {
+.sten-5 {
     position: absolute;
     top: 76%;
     right: 2%;
@@ -187,8 +185,25 @@ ELEMEMENTER
     position: absolute;
     top: 76%;
     left: 16%;
-    z-index: 5;
     width: 4vw;
+    z-index: 5;
+}
+
+.green-musling {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    width: 5vw;
+    z-index: 5;
+    transform: rotate(45deg);
+}
+
+.gul-musling {
+    position: absolute;
+    bottom: 15%;
+    left: 28%;
+    width: 5vw;
+    z-index: 5;
 }
 
 
