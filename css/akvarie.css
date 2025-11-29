@@ -156,7 +156,7 @@ ANIMATIONER
     position: absolute;
     bottom: 55%;
     left: 22%;
-    width: 12vw;
+    width: 10vw;
     animation: pink-fisk 20s linear infinite;
     cursor: pointer;
     z-index: 10;

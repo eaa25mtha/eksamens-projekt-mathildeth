@@ -1,7 +1,5 @@
 "use strict";
 
-const purpleFish = document.querySelector(".purple-fish");
-
 //DOM CONTENT LOAD
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -17,17 +15,26 @@ document.addEventListener("DOMContentLoaded", () => {
  /*----------
  VARIABLER
  -----------*/
-
-
+ const akvariemanden = document.querySelector(".akvariemanden");
 
 
 
  /*---------------
  AUDIO OBJEKTER
  ----------------*/
+ const soundAkvariemanden = new Audio();
+ soundAkvariemanden.src = "audio/akvariemanden.mp3";
 
 
 
+ /*---------------
+ EVENT LISTENERS
+ -----------------*/
+ if (akvariemanden) {
+  akvariemanden.addEventListener("click", () => {
+    soundAkvariemanden.play();
+  });
+ }
 
 
 
